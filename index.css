@@ -1,0 +1,83 @@
+html, body {
+    margin: 10px 0;
+    
+    padding: 0;
+
+    font-family: 'Rubik', sans-serif;
+    background-color: #EEF0F4;
+
+    display: flex; /*flex-wrap: wrap; allows us to have more content on the page 
+    gap: 10px; is like margin but used in flexbox between elements */
+    flex-direction: column;
+    align-items: center;
+    color: #432000;
+    user-select: none;
+    /*user select allows us to change what users can select. For example if we put none, they cannot select the text or images on page */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+    max-width: 320px;
+}
+
+img {
+    width: 150px;
+    margin: 0 auto;
+}
+
+input {
+    color: #432000;
+    background-color: #DCE1EB;
+    border: 0;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+
+    margin-bottom: 10px;
+}
+
+button {
+    color: #FDFDFD;
+    font-family: 'Rubik', sans-serif;
+    background-color: #AC485A;
+    border: 0;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #432000;
+    cursor: pointer;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 0px;
+}
+
+ul li {
+    background-color: #FFFDF8;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+    text-align: center;
+
+    padding: 15px;
+    flex-grow: 1; /*element become bigger to take all the available space */
+    border-radius: 8px;
+}
+
+ul li:hover {
+    background-color: #FFECC7;
+    cursor: pointer;
+}
